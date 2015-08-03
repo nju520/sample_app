@@ -34,8 +34,10 @@ gem 'minitest'
 # install bootstrap
 # gem 'bootstrap-sass', '2.3.2.0' download this file and lint to the appliaction.html.erb file
 gem 'bcrypt-ruby', '3.1.2'
-
+    
 gem 'bootstrap-sass', '~> 3.0.3.0' 
-# I should add this gem .   .field_with_errors" failed to @extend ".control-group".
+
+# I should add this gem .   
+#.field_with_errors" failed to @extend ".control-group".
 #The selector ".control-group" was not found.
 #Use "@extend .control-group !optional" if the extend should be able to fail.

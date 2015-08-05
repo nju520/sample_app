@@ -1,7 +1,17 @@
 source 'https://ruby.taobao.org'
 ruby '2.2.2'
 
-gem 'rails', '4.0.4'
+#gem 'rails', '4.0.4'
+# because in chapter 10, I occured an error :
+# Failures:
+
+#   1) User micropost associations should destroy associated microposts
+#      Failure/Error: @user.destroy
+#      NoMethodError:
+#        undefined method `name' for nil:NilClass
+#      # ./spec/models/user_spec.rb:133:in `block (3 levels) in <top (required)>'
+# They suggest that insert following code
+gem 'rails', '4.1.2'
 
 group :development, :test do
   gem 'sqlite3'

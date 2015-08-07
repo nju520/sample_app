@@ -1,8 +1,10 @@
-// @import "bootstrap"; download the bootstrap file and link to it
+// @import "bootstrap"; I have downloaded the bootstrap file and link to it
 
 /* universal */
 
 $lightGray: #999;
+$blue: #049cdb;
+$gray-lighter:  #eee;      
 
 /* mixins, variables, etc. */
 @mixin box_sizing {
@@ -124,7 +126,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid #999; /* $grayLighter---->#999 */
+    border-top: 1px solid $gray-lighter; /* $grayLighter---->#999 */
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -149,13 +151,13 @@ aside {
   margin-right: 10px;
 }
 
-
+//首页侧边栏的 SCSS 样式
 .stats {
   overflow: auto;
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid #999;
+    border-left: 1px solid $gray-lighter;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -163,7 +165,7 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: $lightGray             // modify $blue;
+      color: $blue;
     }
   }
   strong {
@@ -220,7 +222,7 @@ input {
     padding: 10px 0;
     border-top: 1px solid #999;
     &:last-child {
-      border-bottom: 1px solid #999;  // change the variable $grayLighter to #999
+      border-bottom: 1px solid $gray-lighter;  // change the variable $grayLighter to #999
     }
   }
 }
